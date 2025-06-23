@@ -19,4 +19,24 @@ export class Productos {
   toggleMostrarMas(producto: Product): void {
     producto.mostrarMas = !producto.mostrarMas;
   }
+
+  toggleFavorito(producto: Product): void {
+    producto.favorito = !producto.favorito;
+  }
+
+  addToCart(producto: Product): void {
+    alert(`Agregado al carrito: ${producto.nombre}`);
+  }
+
+  abrirResenas(producto: Product): void {
+    alert(`Mostrando reseñas para: ${producto.nombre}`);
+  }
+
+  comprarAhora(producto: Product): void {
+    alert(`Ir a comprar: ${producto.nombre}`);
+  }
+
+  trackById(index: number, producto: Product): number {
+    return producto.id;
+  }
 }
