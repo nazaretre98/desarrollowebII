@@ -1,0 +1,25 @@
+<h1 class="titulo">Nuestros productos</h1>
+<div class="hero-banner">
+  <img src="/img/STYLIZED-BOTF-FULL-MINI-LUMINIZER-GROUP.jpg.webp" alt="Banner de productos" class="banner">
+</div>
+
+
+<section class="productos">
+  @for (producto of productos; track producto.id) {
+    <article class="producto">
+      <img [src]="producto.imagen" [alt]="producto.nombre" class="producto-imagen">
+      
+      <h3 class="producto-nombre">{{ producto.nombre }}</h3>
+      <p class="producto-descripcion">{{ producto.descripcion }}</p>
+      <strong class="producto-precio">${{ producto.precio }}</strong>
+      
+      <button class="boton-detalles" (click)="toggleMostrarMas(producto)">
+        {{ producto.mostrarMas ? 'Ver menos' : 'Ver más' }}
+      </button>
+
+      <div class="producto-detalles" *ngIf="producto.mostrarMas">
+        <p>{{ producto.detalles }}</p>
+      </div>
+    </article>
+  }
+</section>
