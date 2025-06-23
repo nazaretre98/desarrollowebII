@@ -1,0 +1,83 @@
+/* Tarjetas grandes */
+.productos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  max-width: 960px;
+  margin: 0 auto 40px auto;
+}
+
+.producto-card {
+  flex: 1 1 220px;
+  padding: 15px;
+  background: white;
+  text-align: center;
+  cursor: pointer;
+}
+
+.producto-card img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Inventario pequeño */
+.inventario-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+  max-width: 960px;
+  margin: 0 auto 30px auto;
+}
+
+.inventario-item {
+  width: 90px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.inventario-item img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 5px;
+}
