@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1>Aquí podrás encontrar todos los recursos utilizados durante la explicación del video</h1>
 <h2>Aquí podrás ubicar:</h2>
 <ul>
@@ -94,3 +95,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# desarrollowebII
+Espacio para almacenar proyectos de la materia en desarrollo web
+>>>>>>> 4c9a34d21773ae30f4e5ac272afbfe1e4f71d9c7
